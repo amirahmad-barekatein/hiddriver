@@ -1,4 +1,4 @@
-hiddriver
+HID Driver
 =========
 
-The driver for usb driver work with lpc1768 
+The driver for hid usb driver work with lpc1768 
