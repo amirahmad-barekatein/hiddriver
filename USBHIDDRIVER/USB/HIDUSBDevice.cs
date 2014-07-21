@@ -257,7 +257,7 @@ namespace USBHIDDRIVER.USB
                     int myPtrToPreparsedData = -1;
 
                      myUSB.CT_HidD_GetPreparsedData(myUSB.HidHandle, ref myPtrToPreparsedData);
-                   / int code = myUSB.CT_HidP_GetCaps(myPtrToPreparsedData);
+                    int code = myUSB.CT_HidP_GetCaps(myPtrToPreparsedData);
 
                    // int outputReportByteLength = 65;
 
