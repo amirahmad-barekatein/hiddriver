@@ -256,10 +256,10 @@ namespace USBHIDDRIVER.USB
                     //get output report length
                     int myPtrToPreparsedData = -1;
 
-                    // myUSB.CT_HidD_GetPreparsedData(myUSB.HidHandle, ref myPtrToPreparsedData);
-                    // int code = myUSB.CT_HidP_GetCaps(myPtrToPreparsedData);
+                     myUSB.CT_HidD_GetPreparsedData(myUSB.HidHandle, ref myPtrToPreparsedData);
+                   / int code = myUSB.CT_HidP_GetCaps(myPtrToPreparsedData);
 
-                    int outputReportByteLength = 65;
+                   // int outputReportByteLength = 65;
 
                     int bytesSend = 0;
 
@@ -267,8 +267,8 @@ namespace USBHIDDRIVER.USB
                     while (bytesSend < bDataToWrite.Length)
                     {
                         // Set the size of the Output report buffer.
-                        // byte[] OutputReportBuffer = new byte[myUSB.myHIDP_CAPS.OutputReportByteLength - 1 + 1];
-                        byte[] OutputReportBuffer = new byte[outputReportByteLength - 1 + 1];
+                        byte[] OutputReportBuffer = new byte[myUSB.myHIDP_CAPS.OutputReportByteLength - 1 + 1];
+                       // byte[] OutputReportBuffer = new byte[outputReportByteLength - 1 + 1];
 
                         // Store the report ID in the first byte of the buffer:
                         OutputReportBuffer[0] = 0;
